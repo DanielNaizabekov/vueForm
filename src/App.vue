@@ -17,6 +17,7 @@ export default {
 html, body
   margin: 0
   padding: 0
+  min-height: 100vh
 
 #app
   font-family: Avenir, Helvetica, Arial, sans-serif
@@ -28,6 +29,11 @@ html, body
 h1, h2, h3, h4, p
   margin: 0
   padding: 0
+
+ul, li
+  margin: 0
+  padding: 0
+  list-style: none
 
 .secondary-title
   font-weight: normal

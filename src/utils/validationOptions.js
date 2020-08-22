@@ -36,7 +36,56 @@ export const customerFormValidationOptions = {
       required: 'Введите номер телефона',
       minLength: 'Введите 11 цифр',
       firstLetter: 'Должен начинаться с цифры "7"',
-      numeric: 'Должен состоять из цифр',
+      numeric: 'Допустимы только цифры',
+    },
+  },
+  customerGroup: {
+    path: 'form.customerGroup',
+    methods: ['required'],
+    hints: {
+      required: 'Выберите группу клиентов',
+    },
+  },
+  postcode: {
+    path: 'form.postcode',
+    methods: ['numeric'],
+    hints: {
+      numeric: 'Допустимы только цифры',
+    },
+  },
+  country: {
+    path: 'form.country',
+    methods: ['minLength'],
+    hints: {
+      minLength: 'Введите не менее 3 символов',
+    },
+  },
+  city: {
+    path: 'form.city',
+    methods: ['required'],
+    hints: {
+      required: 'Введите город',
+    },
+  },
+  documentType: {
+    path: 'form.documentType',
+    methods: ['required'],
+    hints: {
+      required: 'Выберите тип документа',
+    },
+  },
+  passportNumber: {
+    path: 'form.passportNumber',
+    methods: ['numeric'],
+    hints: {
+      numeric: 'Допустимы только цифры',
+    },
+  },
+  issuedDate: {
+    path: 'form.issuedDate',
+    methods: ['required'],
+    hints: {
+      required: 'Введите дату выдачи',
     },
   },
 }

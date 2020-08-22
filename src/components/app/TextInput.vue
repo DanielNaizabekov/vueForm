@@ -8,6 +8,7 @@
       @input="onInput" 
       :placeholder="label"
       :maxlength="maxlength"
+      :readonly="readonly"
     >
     <p class="text-input-hint">{{ hint }}</p>
   </div>
@@ -39,6 +40,10 @@ export default {
     maxlength: {
       type: String,
       default: '524288',
+    },
+    readonly: {
+      type: Boolean,
+      default: false,
     },
   },
   methods: {
