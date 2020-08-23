@@ -294,7 +294,7 @@ export default {
   flex-wrap: wrap
 
 .customer-form-group
-  flex: 1 1 500px
+  flex: 1 1 320px
   max-width: 500px
   padding: 10px
   margin: 10px
